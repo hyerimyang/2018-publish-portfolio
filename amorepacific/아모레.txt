@@ -1,0 +1,45 @@
+* video 태그
+비디오는 음소거일 때만 자동재생이 가능하다.
+크롬 정책상 음성이 들어가 있는 영상은 자동재생되지 않음
+-> muted 추가시켜주면 자동재생이 됨
+ex) <video id="video" muted autoplay>
+
+===================================================================
+
+* CSS background url 불러오기
+css에서 background : url 로 이미지 경로 불러올때 이미지가 나오지 않는 경우
+경로설정을 다시 잘 봐야한다.
+
+-> 경로 설정 : ../images/main_visual.jpg (이런 식으로 '../' 쓰면 됨)
+
+
+
+INFO
+1. pc버전 (반응형X)
+2. 메인페이지만 있음
+
+
+반응형 아님
+메인페이지만 작업
+
+amorepacific 홈페이지
+
+
+<<top>>
+mouseover / leave 배경색 변경 jquery로 
+logo는 이미지로 넣음
+메뉴 ul li 
+li 에 a 태그 넣어서 id 이름 넣으면 거기로 위치 이동함
+스크롤 부드럽게 해당위치로 이동하는 제이쿼리
+
+<<section1>>
+video 태그 사용 :: 자동재생 muted 
+글자 위에서아래 순서로 뜨게하기
+
+<<section2>>
+right box ul li css로 다 효과 줌
+
+<<footer>>
+TOP버튼
+
+

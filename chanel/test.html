@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		//jquery 시작
+		//1번버튼=0, 2번버튼=-300, 3번버튼=-600, 4번버튼=-900 -->좌표
+		$('#bt li:eq(0)').click(function(){
+			$('#images').animate({'left':'0'},500);
+			//모든 버튼을 초기상태의 색상으로 리셋
+			$('#bt li').css({'background-color':'#00ccff','width':'10px'}); //리셋하는 코딩을 먼저 적어야함
+			//선택한 자신의 색상을 변경 
+			$(this).css({'background-color':'red', 'width':'30px'}); //css를 이용하여 클릭한 대상의 버튼(li)의 배경색상을 변경, 대상객체가 같을 때 this
+			$(this).animate({'width':'30px'},300); //버튼을 누를때만 animate를 줌
+			
+		});
+		$('#bt li:eq(1)').click(function(){
+			$('#images').animate({'left':'-300px'},500);
+			$('#bt li:eq(1)').animate({'width':'30px'},300);
+			$('#bt li:eq(1)').css({'background-color':'red', 'width':'30px'}); //이벤트를 여러번 쓰지말기! 그 대상이벤트안에 계속 나열해서 쓰기
+			$('#bt li:eq(0)').css({'background-color':'#00ccff','width':'10px'});
+			$('#bt li:eq(2)').css({'background-color':'#00ccff','width':'10px'});
+			$('#bt li:eq(3)').css({'background-color':'#00ccff','width':'10px'});
+		});
+		$('#bt li:eq(2)').click(function(){
+			$('#images').animate({'left':'-600px'},500); 
+			$('#bt li:eq(2)').animate({'width':'30px'},300);
+			$('#bt li:eq(2)').css({'background-color':'red', 'width':'30px'});
+			$('#bt li:eq(1)').css({'background-color':'#00ccff','width':'10px'});
+			$('#bt li:eq(0)').css({'background-color':'#00ccff','width':'10px'});
+			$('#bt li:eq(3)').css({'background-color':'#00ccff','width':'10px'});
+		});
+		$('#bt li:eq(3)').click(function(){
+			$('#images').css({'left':'-900px'}); 
+			$('#bt li:eq(3)').animate({'width':'30px'},300);
+			$('#bt li:eq(3)').css({'background-color':'red', 'width':'30px'});
+			$('#bt li:eq(1)').css({'background-color':'#00ccff','width':'10px'});
+			$('#bt li:eq(2)').css({'background-color':'#00ccff','width':'10px'});
+			$('#bt li:eq(0)').css({'background-color':'#00ccff','width':'10px'});
+		});
+
+	});
+  </script>
+  <style>
+	* {margin:0; padding:0; list-style:none;}
+	#wrap {width:300px; height:350px; border:10px solid #cc3300; position:relative; overflow:hidden;}
+	#images {width:1200px; height:300px; position:absolute; top:0; left:0;}
+	#images li {width:300px; height:300px; float:left; border:1px solid #000; box-sizing:border-box;}
+	#images li img {width:300px; height:300px;}
+	
+	#bt {text-align:center; margin-top:317px;}
+	#bt li {width:10px; height:10px; border-radius:10px; background-color:#00ccff; margin:3px; display:inline-block; cursor:pointer;}
+  </style>
+ </head>
+ <body>
+ <!--부모가 두개가 있어야함, 전체를감싸는 부모 한개 & 이미지들을 감싸는 부모 한개-->
+	<div id="wrap">
+		<ul id="images">
+			<li><img src="image1.jpg" alt="" /></li>
+			<li><img src="image2.jpg" alt="" /></li>
+			<li><img src="image3.jpg" alt="" /></li>
+			<li><img src="image4.jpg" alt="" /></li>
+		</ul>
+		<ul id="bt">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+ </body>
+</html>

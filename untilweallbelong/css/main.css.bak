@@ -1,0 +1,41 @@
+* {margin:0; padding:0; list-style:none;}
+body, html {height:100%;}
+#wrap {height:100%; position:relative;}
+#logo img {position:absolute; top:30px; left:30px; z-index:99;} 
+#main {width:60%; height:100%;  background:#ecc4b5 url('../images/hand.png') center center no-repeat; text-align:center; background-size:900px; position:relative; float:left;}
+#main h1 {color:#FFF; font-size:55px; position:absolute; top:370px;  font-weight:900; text-align:center;
+width:100%;}
+#main b {margin-left:100px; margin-right:90px;}
+#play_logo {position:absolute; top:430px; width:100%; text-align:center;}
+#play_logo img {width:120px;}
+
+#right_box {height:100%; width:40%; float:right; background-color:#000;}
+#right_box1 {height:50%; background:#000 url('../images/ring.png') center center no-repeat; background-size:500px; position:relative;}
+#right_box2 {height:50%; background:#ebc1a2 url('../images/man.png') center center no-repeat; background-size:1300px; position:relative;}
+#right_box1 #text {position:absolute; color:#FFF; width:100%; text-align:center; margin-top:24%;}
+#right_box1 #text b {font-size:30px;}
+#right_box2 #text {position:absolute; color:#FFF; width:100%; text-align:center; margin-top:24%;}
+#right_box2 #text b {font-size:30px;}
+
+#button1 {width:200px; height:50px; text-align:center; position:absolute; line-height:50px; margin:300px 280px; color:#FFF;  perspective:300px; cursor:pointer;}
+#button1 div {width:200px; height:48px; border:1px solid #FFF; box-sizing:border-box; position:absolute; transition:0.5s; }
+#button1 div:nth-child(1) {  color:#fff; transform:rotateX(90deg); transform-origin:50% 50% -25px; }
+#button1:hover div:nth-child(1)  { background-color:#ff646a;transform:rotateX(0deg);  }
+#button1 div:nth-child(2) { color:#FFF; transform:rotateX(0deg); transform-origin:50% 50% -25px;}
+#button1:hover div:nth-child(2)  {  transform:rotateX(-90deg); }
+
+#button2 {width:200px; height:50px; text-align:center; position:absolute; line-height:50px; margin:300px 280px; color:#FFF;  perspective:300px; cursor:pointer;}
+#button2 div {width:200px; height:48px; border:1px solid #FFF; box-sizing:border-box; position:absolute; transition:0.5s; }
+#button2 div:nth-child(1) {  color:#fff; transform:rotateX(90deg); transform-origin:50% 50% -25px; }
+#button2:hover div:nth-child(1)  { background-color:#ff646a; transform:rotateX(0deg);  }
+#button2 div:nth-child(2) { color:#FFF; transform:rotateX(0deg); transform-origin:50% 50% -25px;}
+#button2:hover div:nth-child(2)  {transform:rotateX(-90deg); }
+
+#menu_button ul {width:50px; height:50px;  position:absolute; top:50px; right:30px; cursor:pointer;}
+#menu_button ul li {width:30px; height:2px; background-color:#FFF; margin-bottom:5px;}
+
+#side_menu {width:600px; height:100%; background-color:#FFF; position:absolute; top:0px; right:-600px;}
+#side_menu h1 {width:50px; height:50px; text-align:center;  position:absolute; top:40px; right:30px; cursor:pointer;}
+#side_menu ul {width:400px; height:700px; color:gray; font-weight:900; font-size:30px; position:absolute; top:200px; left:80px; }
+#side_menu ul li {margin-bottom:35px; cursor:pointer;}
+#side_menu ul li:hover {color:red;}

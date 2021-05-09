@@ -1,0 +1,152 @@
+*{ margin:0; padding:0; }
+body { background-color:black; }
+
+/*////////////////////상단숨김메뉴////////////////////*/
+#top1 {
+	width:100%;
+	background-color:black; 
+	border-bottom:1px solid #fff; 
+	display:none; 
+	text-align:center; 
+	color:#fff; 
+	font-family: 'Open Sans', sans-serif;
+} 
+#top1>ul{ text-align:center; } 
+#top1>ul>li{ 
+	display:inline-block; 
+	padding:30px 30px 0px 30px; 
+	cursor:pointer;
+}
+#top1>ul>li:hover { opacity:0.5; }
+#beautytalks { 
+	width:100%; 
+	height:200px; 
+	background:url('../images/beautytalks_img.png') center center no-repeat;
+}
+#top1 p { 
+	width:1200px;
+	margin:20px auto;
+	text-transform:uppercase;
+}
+	
+
+#top2 {
+	width:100%; 
+	background-color:black; 
+	text-align:center; 
+	border-bottom:1px solid #fff;
+}
+#top2 img { padding:10px; cursor:pointer; }
+
+
+/*////////////////////메인슬라이드////////////////////*/
+#slide_wrap { 
+	width:100%;
+	height:900px; 
+	overflow:hidden;
+	position:relative;
+}
+#slide { 
+	width:8000px; 
+	position:absolute; 
+	left:0; 
+	top:0;
+}
+#slide div { float:left; }
+#slide_txt {
+	position:absolute; 
+	left:3%;
+	top:805px;
+	width:600px; 
+	color:#fff; 
+	text-shadow:1px 1px 0 black; 
+	font-family: 'Open Sans', sans-serif;
+}
+#slide_bt_wrap { 
+	position:absolute;
+	left:49%;
+	top:855px;
+	width:48px; 
+	height:40px;
+}
+#slide_bt_wrap div { 
+	width:10px; 
+	height:10px;
+	background-color:#fff;
+	float:left; 
+	margin:3px;
+	border-radius:10px; 
+	cursor:pointer;
+}
+#slide_bt_wrap #slide_bt1 { background-color:#000; }
+
+/*////////////////////메인상품////////////////////*/
+#coco_wrap { 
+	width:1200px; 
+	padding:10px; 
+	border:10px solid #fff; 
+	margin:0 auto;
+	color:#fff;
+	font-family: 'Open Sans', sans-serif; 
+	background-color:#fff; 
+	text-align:center;
+	font-size:1.2em;
+}
+#coco_wrap_title { 
+	color:#fff; 
+	font-weight:900;
+	background-color:#000;
+}
+#coco_wrap_content { color:#000; }
+#coco_wrap_content p { margin-top:30px; }
+#coco_wrap_content_bg { 
+	height:500px; 
+	background-color:#e5c7b5; 
+	color:#fff; 
+	margin-top:20px;
+}
+#coco_wrap_content_bg_bt { height:40px; }
+#coco_wrap_content_bg_bt ul { list-style:none; text-align:center;}
+#coco_wrap_content_bg_bt ul li { 
+	width:7px; 
+	height:7px;
+	border-radius:5px;
+	border:1px solid #fff;
+	margin:30px 2px;
+	display:inline-block;
+	cursor:pointer;
+}
+#coco_wrap_content_bg_bt ul li:nth-child(1) { background-color:#e5c7b5; width:30px; }
+#coco_wrap_content_bg_bt ul li:nth-child(2) { background-color:#d69d84; }
+#coco_wrap_content_bg_bt ul li:nth-child(3) { background-color:#c21422; }
+#coco_wrap_content_bg_bt ul li:nth-child(4) { background-color:#000000; }
+
+
+#coco_wrap_content_bg_left { 
+width:250px;
+height:400px;
+margin:50px 0 0 120px;
+position:relative; 
+overflow:hidden; 
+float:left;
+}
+#coco_wrap_content_bg_right { 
+width:500px; 
+float:left; 
+margin:110px 0 0 20px;
+text-align:left;
+}
+#coco_wrap_content_bg_right h3 {  
+font-size:30px; 
+letter-spacing:5px; 
+line-height:25px; 
+text-shadow:0 2px 2px #b4b4b4;
+margin-top:30px;
+}
+#coco_wrap_content_bg_right p {
+font-size:20px; 
+line-height:17px;
+margin-top:30px;
+}
+#coco_slide_img_wrap { width:1000px; position:absolute; } 
+#coco_slide_img_wrap div { float:left; } 
